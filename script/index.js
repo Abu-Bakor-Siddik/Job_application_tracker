@@ -43,4 +43,12 @@ function switchTab(tab){
         rejectedContainer.classList.remove('hidden');
     }
 }
+
+// state update
+const totalStat = document.getElementById('stat-total');
+const interviewStat = document.getElementById('stat-interview');
+const rejectedStat = document.getElementById('stat-rejected');
+
+totalStat.innerText = allContainer.children.length;
+
 switchTab(currentTab);

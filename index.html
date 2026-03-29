@@ -31,15 +31,15 @@
         <div id="stats-container" class="grid grid-cols-3 gap-4">
             <div id="total" class="bg-[#f1f2f4] p-5 rounded-2xl shadow-3">
                 <p class="text-[#323B49] font-medium text-[14px]">Total</p>
-                <h2 class="text-[24px] font-bold text-[#002C5C]">0</h2>
+                <h2 id="stat-total" class="text-[24px] font-bold text-[#002C5C]">0</h2>
             </div>
             <div id="interview" class="bg-[#F1F2F4] p-5 rounded-2xl">
                 <p class="text-[#323B49]  font-medium text-[14px]">Interview</p>
-                <h2 class="text-[24px] font-bold text-[#10B981]">0</h2>
+                <h2 id="stat-interview" class="text-[24px] font-bold text-[#10B981]">0</h2>
             </div>
             <div id="rejeced" class="bg-[#F1F2F4] p-5 rounded-2xl">
                 <p class="text-[#323B49] font-medium text-[14px]">Rejected</p>
-                <h2 class="text-[24px] font-bold text-[#EF4444]">0</h2>
+                <h2 id="stat-rejected" class="text-[24px] font-bold text-[#EF4444]">0</h2>
             </div>
         </div>
 
@@ -60,10 +60,10 @@
                  <button onclick="switchTab('rejected')" id="tab-rejected" class="btn ">Rejected</button>
             </div>
             <!-- Job Cards -->
-            <div id="job-container">
-                <section class="hidden" id="all-container">
+            <div id="job-container" class="mt-4">
+                <section class="hidden space-y-5 " id="all-container">
                      <!-- Tab 1  -->
-                    <div class=" bg-white border-base-300 p-6 border-4 flex">           
+                    <div class=" bg-white border-base-300 p-6 border-2 flex rounded-2xl">           
                         <div>
                             <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
                             <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
@@ -81,7 +81,7 @@
                     </div>
 
                     <!--Tab 2  -->
-                    <div class="bg-white border-base-300 p-6 border-4 flex">
+                    <div class="bg-white border-base-300 p-6 border-2 flex rounded-2xl">
                         <div>
                             <h3 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h3> 
                             <p class="font-medium text-[16px] text-[#323b49be]">Web Designer & Developer</p>
@@ -99,15 +99,15 @@
                     </div>
 
                     <!--Tab 3  -->
-                    <div class="bg-white border-base-300 p-6 border-4 flex">
+                    <div class="bg-white border-base-300 p-6 border-2 flex rounded-2xl">
                         <div>
-                            <h3 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h3> 
-                            <p class="font-medium text-[16px] text-[#323b49be]">Web Designer & Developer</p>
+                            <h3 class="font-semibold text-[18px] text-[#002C5C]">DataViz Solutions</h3> 
+                            <p class="font-medium text-[16px] text-[#323b49be]">Data Visualization Specialist</p>
                             <br>
-                            <p class="font-medium text-[14px] text-[#323b49be]">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Boston, MA • Full-time • $125,000 - $165,000</p>
                             <br>
                             <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
-                            <p class="font-medium text-[14px] text-[#323b49be]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.</p>
                             <div class="mt-5">
                                     <button class="btn btn-outline btn-success">INTERVIEW</button>
                                     <button class="btn btn-outline btn-error">REJECTED</button>
@@ -117,15 +117,15 @@
                     </div>
 
                     <!--Tab 4  -->
-                    <div class="bg-white border-base-300 p-6 border-4 flex">
+                    <div class="bg-white border-base-300 p-6 border-2 rounded-2xl flex">
                         <div>
-                            <h3 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h3> 
-                            <p class="font-medium text-[16px] text-[#323b49be]">Web Designer & Developer</p>
+                            <h3 class="font-semibold text-[18px] text-[#002C5C]">CloudFirst Inc</h3> 
+                            <p class="font-medium text-[16px] text-[#323b49be]">Backend Developer</p>
                             <br>
-                            <p class="font-medium text-[14px] text-[#323b49be]">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Seattle, WA • Full-time • $140,000 - $190,000</p>
                             <br>
                             <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
-                            <p class="font-medium text-[14px] text-[#323b49be]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</p>
                             <div class="mt-5">
                                     <button class="btn btn-outline btn-success">INTERVIEW</button>
                                     <button class="btn btn-outline btn-error">REJECTED</button>
@@ -135,15 +135,15 @@
                     </div>
 
                     <!--Tab 5  -->
-                    <div class="bg-white border-base-300 p-6 border-4 flex">
+                    <div class="bg-white border-base-300 p-6 border-2 rounded-2xl flex">
                         <div>
-                            <h3 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h3> 
-                            <p class="font-medium text-[16px] text-[#323b49be]">Web Designer & Developer</p>
+                            <h3 class="font-semibold text-[18px] text-[#002C5C]">Innovation Labs</h3> 
+                            <p class="font-medium text-[16px] text-[#323b49be]">UI/UX Engineer</p>
                             <br>
-                            <p class="font-medium text-[14px] text-[#323b49be]">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Austin, TX • Full-time • $110,000 - $150,000</p>
                             <br>
                             <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
-                            <p class="font-medium text-[14px] text-[#323b49be]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.</p>
                             <div class="mt-5">
                                     <button class="btn btn-outline btn-success">INTERVIEW</button>
                                     <button class="btn btn-outline btn-error">REJECTED</button>
@@ -153,15 +153,15 @@
                     </div>
 
                     <!--Tab 6  -->
-                    <div class="bg-white border-base-300 p-6 border-4 flex">
+                    <div class="bg-white border-base-300 p-6 border-2 rounded-2xl flex">
                         <div>
-                            <h3 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h3> 
-                            <p class="font-medium text-[16px] text-[#323b49be]">Web Designer & Developer</p>
+                            <h3 class="font-semibold text-[18px] text-[#002C5C]">MegaCorp Solutions</h3> 
+                            <p class="font-medium text-[16px] text-[#323b49be]">JavaScript Developer</p>
                             <br>
-                            <p class="font-medium text-[14px] text-[#323b49be]">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
+                            <p class="font-medium text-[14px] text-[#323b49be]">New York, NY • Full-time • $130,000 - $170,00</p>
                             <br>
                             <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
-                            <p class="font-medium text-[14px] text-[#323b49be]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.</p>
                             <div class="mt-5">
                                     <button class="btn btn-outline btn-success">INTERVIEW</button>
                                     <button class="btn btn-outline btn-error">REJECTED</button>
@@ -171,15 +171,15 @@
                     </div>
 
                     <!--Tab 7  -->
-                    <div class="bg-white border-base-300 p-6 border-4 flex">
+                    <div class="bg-white border-base-300 p-6 border-2 rounded-2xl flex">
                         <div>
-                            <h3 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h3> 
-                            <p class="font-medium text-[16px] text-[#323b49be]">Web Designer & Developer</p>
+                            <h3 class="font-semibold text-[18px] text-[#002C5C]">StartupXYZ</h3> 
+                            <p class="font-medium text-[16px] text-[#323b49be]">Full Stack Engineer</p>
                             <br>
-                            <p class="font-medium text-[14px] text-[#323b49be]">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $120,000 - $160,000</p>
                             <br>
                             <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
-                            <p class="font-medium text-[14px] text-[#323b49be]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.</p>
                             <div class="mt-5">
                                     <button class="btn btn-outline btn-success">INTERVIEW</button>
                                     <button class="btn btn-outline btn-error">REJECTED</button>
@@ -189,15 +189,15 @@
                     </div>
 
                     <!--Tab 8 -->
-                    <div class="bg-white border-base-300 p-6 border-4 flex">
+                    <div class="bg-white border-base-300 p-6 border-2 rounded-2xl flex">
                         <div>
-                            <h3 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h3> 
-                            <p class="font-medium text-[16px] text-[#323b49be]">Web Designer & Developer</p>
+                            <h3 class="font-semibold text-[18px] text-[#002C5C]">TechCorp Industries</h3> 
+                            <p class="font-medium text-[16px] text-[#323b49be]">Senior Frontend Developer</p>
                             <br>
-                            <p class="font-medium text-[14px] text-[#323b49be]">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
+                            <p class="font-medium text-[14px] text-[#323b49be]">San Francisco, CA • Full-time • $130,000 - $175,000</p>
                             <br>
                             <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
-                            <p class="font-medium text-[14px] text-[#323b49be]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+                            <p class="font-medium text-[14px] text-[#323b49be]">We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p>
                             <div class="mt-5">
                                     <button class="btn btn-outline btn-success">INTERVIEW</button>
                                     <button class="btn btn-outline btn-error">REJECTED</button>
