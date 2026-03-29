@@ -54,130 +54,165 @@
         </div>
         <section>
             <!-- Tabs-->
-            <div class="tabs tabs-box">
-                <input type="radio" name="my_tabs_6" class="tab" aria-label="All" checked="checked"/>
-                <!-- Tab Contents -->
+            <div id="tab-container">
+                 <button onclick="switchTab('all')" id="tab-all" class="btn ">All</button>
+                 <button onclick="switchTab('interview')"  id="tab-interview" class="btn ">Interview</button>
+                 <button onclick="switchTab('rejected')" id="tab-rejected" class="btn ">Rejected</button>
+            </div>
+            <!-- Job Cards -->
+            <div id="job-container">
 
-                <!--Tab 1  -->
-                <div class="tab-content bg-base-100 border-base-300 p-6">
-                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
-                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
-                   <br>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
-                   <br>
-                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                   <div class="mt-5">
-                        <button class="btn btn-outline btn-success">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error">REJECTED</button>
-                   </div>
-                </div>
+                <!-- Tab 1  -->
+                    <div class=" bg-white border-base-300 p-6 border-4 flex">           
+                        <div>
+                            <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
+                            <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
+                            <br>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
+                            <br>
+                            <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                            <div class="mt-5">
+                                    <button class="btn btn-outline btn-success">INTERVIEW</button>
+                                    <button class="btn btn-outline btn-error">REJECTED</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-circle bg-red-300"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
 
-                <!--Tab 2  -->
-                <div class="tab-content bg-base-100 border-base-300 p-6">
-                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
-                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
-                   <br>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
-                   <br>
-                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                   <div class="mt-5">
-                        <button class="btn btn-outline btn-success">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error">REJECTED</button>
-                   </div>
-                </div>
+                    <!--Tab 2  -->
+                    <div class="bg-white border-base-300 p-6 border-4 flex">
+                        <div>
+                            <h3 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h3> 
+                            <p class="font-medium text-[16px] text-[#323b49be]">Web Designer & Developer</p>
+                            <br>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
+                            <br>
+                            <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+                            <div class="mt-5">
+                                    <button class="btn btn-outline btn-success">INTERVIEW</button>
+                                    <button class="btn btn-outline btn-error">REJECTED</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-circle bg-red-300"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
 
-                <!--Tab 3  -->
-                <div class="tab-content bg-base-100 border-base-300 p-6">
-                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
-                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
-                   <br>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
-                   <br>
-                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                   <div class="mt-5">
-                        <button class="btn btn-outline btn-success">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error">REJECTED</button>
-                   </div>
-                </div>
+                    <!--Tab 3  -->
+                    <div class="bg-white border-base-300 p-6 border-4 flex">
+                        <div>
+                            <h3 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h3> 
+                            <p class="font-medium text-[16px] text-[#323b49be]">Web Designer & Developer</p>
+                            <br>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
+                            <br>
+                            <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+                            <div class="mt-5">
+                                    <button class="btn btn-outline btn-success">INTERVIEW</button>
+                                    <button class="btn btn-outline btn-error">REJECTED</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-circle bg-red-300"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
 
-                <!--Tab 3  -->
-                <div class="tab-content bg-base-100 border-base-300 p-6">
-                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
-                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
-                   <br>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
-                   <br>
-                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                   <div class="mt-5">
-                        <button class="btn btn-outline btn-success">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error">REJECTED</button>
-                   </div>
-                </div>
-                <div class="tab-content bg-base-100 border-base-300 p-6">
-                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
-                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
-                   <br>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
-                   <br>
-                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                   <div class="mt-5">
-                        <button class="btn btn-outline btn-success">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error">REJECTED</button>
-                   </div>
-                </div>
-                <div class="tab-content bg-base-100 border-base-300 p-6">
-                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
-                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
-                   <br>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
-                   <br>
-                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                   <div class="mt-5">
-                        <button class="btn btn-outline btn-success">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error">REJECTED</button>
-                   </div>
-                </div>
-                <div class="tab-content bg-base-100 border-base-300 p-6">
-                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
-                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
-                   <br>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
-                   <br>
-                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                   <div class="mt-5">
-                        <button class="btn btn-outline btn-success">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error">REJECTED</button>
-                   </div>
-                </div>
-                <div class="tab-content bg-base-100 border-base-300 p-6">
-                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
-                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
-                   <br>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
-                   <br>
-                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
-                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                   <div class="mt-5">
-                        <button class="btn btn-outline btn-success">INTERVIEW</button>
-                        <button class="btn btn-outline btn-error">REJECTED</button>
-                   </div>
-                </div>
+                    <!--Tab 4  -->
+                    <div class="bg-white border-base-300 p-6 border-4 flex">
+                        <div>
+                            <h3 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h3> 
+                            <p class="font-medium text-[16px] text-[#323b49be]">Web Designer & Developer</p>
+                            <br>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
+                            <br>
+                            <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+                            <div class="mt-5">
+                                    <button class="btn btn-outline btn-success">INTERVIEW</button>
+                                    <button class="btn btn-outline btn-error">REJECTED</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-circle bg-red-300"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
 
-                <input type="radio" name="my_tabs_6" class="tab" aria-label="Interview" />
-                <div class="tab-content bg-base-100 border-base-300 p-6">Tab content 2</div>
+                    <!--Tab 5  -->
+                    <div class="bg-white border-base-300 p-6 border-4 flex">
+                        <div>
+                            <h3 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h3> 
+                            <p class="font-medium text-[16px] text-[#323b49be]">Web Designer & Developer</p>
+                            <br>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
+                            <br>
+                            <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+                            <div class="mt-5">
+                                    <button class="btn btn-outline btn-success">INTERVIEW</button>
+                                    <button class="btn btn-outline btn-error">REJECTED</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-circle bg-red-300"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
 
-                <input type="radio" name="my_tabs_6" class="tab" aria-label="Rejected" />
-                <div class="tab-content bg-base-100 border-base-300 p-6">Tab content 3</div>
+                    <!--Tab 6  -->
+                    <div class="bg-white border-base-300 p-6 border-4 flex">
+                        <div>
+                            <h3 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h3> 
+                            <p class="font-medium text-[16px] text-[#323b49be]">Web Designer & Developer</p>
+                            <br>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
+                            <br>
+                            <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+                            <div class="mt-5">
+                                    <button class="btn btn-outline btn-success">INTERVIEW</button>
+                                    <button class="btn btn-outline btn-error">REJECTED</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-circle bg-red-300"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+
+                    <!--Tab 7  -->
+                    <div class="bg-white border-base-300 p-6 border-4 flex">
+                        <div>
+                            <h3 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h3> 
+                            <p class="font-medium text-[16px] text-[#323b49be]">Web Designer & Developer</p>
+                            <br>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
+                            <br>
+                            <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+                            <div class="mt-5">
+                                    <button class="btn btn-outline btn-success">INTERVIEW</button>
+                                    <button class="btn btn-outline btn-error">REJECTED</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-circle bg-red-300"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+
+                    <!--Tab 8 -->
+                    <div class="bg-white border-base-300 p-6 border-4 flex">
+                        <div>
+                            <h3 class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</h3> 
+                            <p class="font-medium text-[16px] text-[#323b49be]">Web Designer & Developer</p>
+                            <br>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
+                            <br>
+                            <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                            <p class="font-medium text-[14px] text-[#323b49be]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+                            <div class="mt-5">
+                                    <button class="btn btn-outline btn-success">INTERVIEW</button>
+                                    <button class="btn btn-outline btn-error">REJECTED</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-circle bg-red-300"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+
+                    
             </div>
         </section>
         
     </section>
+
+    <!-- Javascript -->
+    <script src="script/index.js"></script>
 </body>
 </html>
