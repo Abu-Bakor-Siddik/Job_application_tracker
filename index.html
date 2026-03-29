@@ -50,7 +50,7 @@
     <section>
         <div class="flex items-center justify-between mb-5">
             <h3 class="font-semibold text-[20px]  text">Available Jobs</h3>
-            <p class="font-medium text-[16px] text-[#323b49be]"> <span>0</span> Jobs</p>
+            <p class="font-medium text-[16px] text-[#323b49be]"> <span id="available">0</span> Jobs</p>
         </div>
         <section>
             <!-- Tabs-->
@@ -61,6 +61,7 @@
             </div>
             <!-- Job Cards -->
             <div id="job-container" class="mt-4">
+                <!-- All section -->
                 <section class="hidden space-y-5 " id="all-container">
                      <!-- Tab 1  -->
                     <div class="cards bg-white  border-base-300 p-6 border-2 flex rounded-2xl hover:shadow-xl ">           
@@ -206,8 +207,12 @@
                         <button class="btn btn-circle bg-red-300 delete"><i class="fa-solid fa-trash-can pointer-events-none"></i></button>
                     </div>
                 </section>
-                <section class="hidden" id="interview-container">Interview Section</section>    
-                <section class="hidden" id="rejected-container">Rejected Section</section>    
+
+                <!-- Interview Section -->
+                <section class="hidden" id="interview-container"></section> 
+
+                <!-- Rejected Section -->
+                <section class="hidden" id="rejected-container"></section>    
             </div>
 
             <!-- Empty State -->
