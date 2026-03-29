@@ -52,3 +52,29 @@ const rejectedStat = document.getElementById('stat-rejected');
 totalStat.innerText = allContainer.children.length;
 
 switchTab(currentTab);
+
+document.getElementById("job-container")
+    .addEventListener('click',function(event){
+        // console.log(event.target);
+
+        
+        const clickElement = event.target;
+        // console.log(clickElement.parentNode.parentNode.parentNode);
+        const card = clickElement.closest(".cards");
+        // console.log(card);
+        const parent = card.parentNode;
+        const status = card.querySelector(".stats");
+
+        if(clickElement.classList.contains('interview')){
+            status.innerText="Interview";
+            interviewContainer.append(card);
+        }
+        if(clickElement.classList.contains('rejected')){
+            status.innerText = "Rejected";
+            rejectedContainer.append(card);
+        }
+        if(clickElement.classList.contains('delete')){
+            parent.removeChild(card);
+             
+        }
+    })
