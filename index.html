@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+
+    <!-- Tailwind + CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <style>
+        *{
+            font-family: "Geist", sans-serif;
+        }
+    </style>
+</head>
+<body class="max-h-400 my-15 mx-61.25 ">
+    <header>
+        <!-- Stats -->
+        <h1 class="text-[32px] font-bold mb-3" >Job Application Tracker</h1>
+        <div id="stats-container" class="grid grid-cols-3 gap-4">
+            <div id="total" class="bg-[#f1f2f4] p-5 rounded-2xl shadow-3">
+                <p class="text-[#323B49] font-medium text-[14px]">Total</p>
+                <h2 class="text-[24px] font-bold text-[#002C5C]">0</h2>
+            </div>
+            <div id="interview" class="bg-[#F1F2F4] p-5 rounded-2xl">
+                <p class="text-[#323B49]  font-medium text-[14px]">Interview</p>
+                <h2 class="text-[24px] font-bold text-[#10B981]">0</h2>
+            </div>
+            <div id="rejeced" class="bg-[#F1F2F4] p-5 rounded-2xl">
+                <p class="text-[#323B49] font-medium text-[14px]">Rejected</p>
+                <h2 class="text-[24px] font-bold text-[#EF4444]">0</h2>
+            </div>
+        </div>
+
+    </header>
+    <br>
+    <hr class="text-[#E6E7E9]">
+    <br>
+    <section>
+        <div class="flex justify-between mb-5">
+            <h3 class="font-semibold text-[20px]  text">Available Jobs</h3>
+            <p class="font-medium text-[16px] text-[#323b49be]"> <span>0</span> Jobs</p>
+        </div>
+        <section>
+            <!-- Tabs-->
+            <div class="tabs tabs-box">
+                <input type="radio" name="my_tabs_6" class="tab" aria-label="All" checked="checked"/>
+                <!-- Tab Contents -->
+
+                <!--Tab 1  -->
+                <div class="tab-content bg-base-100 border-base-300 p-6">
+                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
+                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
+                   <br>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
+                   <br>
+                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                   <div class="mt-5">
+                        <button class="btn btn-outline btn-success">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error">REJECTED</button>
+                   </div>
+                </div>
+
+                <!--Tab 2  -->
+                <div class="tab-content bg-base-100 border-base-300 p-6">
+                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
+                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
+                   <br>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
+                   <br>
+                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                   <div class="mt-5">
+                        <button class="btn btn-outline btn-success">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error">REJECTED</button>
+                   </div>
+                </div>
+
+                <!--Tab 3  -->
+                <div class="tab-content bg-base-100 border-base-300 p-6">
+                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
+                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
+                   <br>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
+                   <br>
+                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                   <div class="mt-5">
+                        <button class="btn btn-outline btn-success">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error">REJECTED</button>
+                   </div>
+                </div>
+
+                <!--Tab 3  -->
+                <div class="tab-content bg-base-100 border-base-300 p-6">
+                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
+                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
+                   <br>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
+                   <br>
+                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                   <div class="mt-5">
+                        <button class="btn btn-outline btn-success">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error">REJECTED</button>
+                   </div>
+                </div>
+                <div class="tab-content bg-base-100 border-base-300 p-6">
+                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
+                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
+                   <br>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
+                   <br>
+                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                   <div class="mt-5">
+                        <button class="btn btn-outline btn-success">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error">REJECTED</button>
+                   </div>
+                </div>
+                <div class="tab-content bg-base-100 border-base-300 p-6">
+                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
+                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
+                   <br>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
+                   <br>
+                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                   <div class="mt-5">
+                        <button class="btn btn-outline btn-success">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error">REJECTED</button>
+                   </div>
+                </div>
+                <div class="tab-content bg-base-100 border-base-300 p-6">
+                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
+                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
+                   <br>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
+                   <br>
+                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                   <div class="mt-5">
+                        <button class="btn btn-outline btn-success">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error">REJECTED</button>
+                   </div>
+                </div>
+                <div class="tab-content bg-base-100 border-base-300 p-6">
+                   <h3 class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</h3> 
+                   <p class="font-medium text-[16px] text-[#323b49be]">React Native Developer</p>
+                   <br>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Remote • Full-time • $130,000 - $175,000</p>
+                   <br>
+                   <div class="badge badge-soft badge-lg mb-2">Not Applied</div>
+                   <p class="font-medium text-[14px] text-[#323b49be]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                   <div class="mt-5">
+                        <button class="btn btn-outline btn-success">INTERVIEW</button>
+                        <button class="btn btn-outline btn-error">REJECTED</button>
+                   </div>
+                </div>
+
+                <input type="radio" name="my_tabs_6" class="tab" aria-label="Interview" />
+                <div class="tab-content bg-base-100 border-base-300 p-6">Tab content 2</div>
+
+                <input type="radio" name="my_tabs_6" class="tab" aria-label="Rejected" />
+                <div class="tab-content bg-base-100 border-base-300 p-6">Tab content 3</div>
+            </div>
+        </section>
+        
+    </section>
+</body>
+</html>
