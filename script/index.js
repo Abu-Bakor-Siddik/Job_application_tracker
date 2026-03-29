@@ -82,19 +82,19 @@ document.getElementById("job-container")
 
         if(clickElement.classList.contains('interview')){
             status.innerText="Interview";
+            this.classList.remove('interview');
             interviewContainer.append(card);
-            updateStat();
         }
         if(clickElement.classList.contains('rejected')){
             status.innerText = "Rejected";
+            this.classList.remove('rejected');
             rejectedContainer.append(card);
-            updateStat();
         }
         if(clickElement.classList.contains('delete')){
             parent.removeChild(card);
-            updateStat();
-             
+            
         }
+        updateStat();
     })
 
     function updateStat(){
@@ -110,6 +110,13 @@ document.getElementById("job-container")
         rejectedStat.innerText=counts['rejected'];
 
         availableState.innerText=counts[currentTab];
+
+        if(counts[currentTab] < 1){
+            emptyState.classList.remove('hidden');
+        }else{
+            emptyState.classList.add('hidden');
+        }
     }
+
 
     updateStat();
